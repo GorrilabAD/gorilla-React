@@ -24,6 +24,10 @@ class RegistrationForm extends Component {
     console.log('email was changed', event.target.value);
 
   }
+  function saveStorage {
+    localStorage.setItem('save', JSON.stringify( this.input.value));
+  }
+
 
   render() {
     return(
@@ -34,7 +38,7 @@ class RegistrationForm extends Component {
         value={this.state.email}
         onChange={this.handleEmailChange}
       />
-      <button onClick={localStorage.setItem('save', this.state.email)}>Save</button>
+      <button>Save</button>
       <div><h1>{this.state.email}</h1></div>
     </form>
 )
