@@ -17,6 +17,7 @@ class RegistrationForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
     console.log('form is submited. Email value is', this.state.email);
+    localStorage.setItem('doSave', JSON.stringify(this.state.email));
   }
 
   handleEmailChange(event) {
@@ -24,9 +25,7 @@ class RegistrationForm extends Component {
     console.log('email was changed', event.target.value);
 
   }
-  function saveStorage {
-    localStorage.setItem('save', JSON.stringify( this.input.value));
-  }
+
 
 
   render() {
