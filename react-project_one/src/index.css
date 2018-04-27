@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #222;
+}
+.signup-form{
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-top: 100px;
+
+
+}
+.signup-form input{
+  height: 60px;
+  border: none;
+  background: transparent;
+  border-bottom: solid 1px #555;
+  outline: none;
+  color: #fff;
+}
+.signup-form input:focus{
+}
+.mdc-button--raised{
+  margin-top: 30px;
+  height: 40px;
+}
+input:focus::-webkit-input-placeholder {color: transparent}
+input:focus::-moz-placeholder          {color: transparent}
+input:focus:-moz-placeholder           {color: transparent}
+input:focus:-ms-input-placeholder      {color: transparent}

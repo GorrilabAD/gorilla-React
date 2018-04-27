@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(right, #e66465,#9198e5);
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 100px;
+}
+a {
+  color: #000;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
